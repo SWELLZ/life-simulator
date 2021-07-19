@@ -1969,7 +1969,7 @@ RectTransform:
   - {fileID: 1620099109}
   - {fileID: 1685159490}
   m_Father: {fileID: 857913780}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3574,7 +3574,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 479404436}
+      - m_Target: {fileID: 884609023}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6067,6 +6067,7 @@ RectTransform:
   m_Children:
   - {fileID: 540036803}
   - {fileID: 1261426799}
+  - {fileID: 884609024}
   - {fileID: 1856224904}
   - {fileID: 1522958194}
   - {fileID: 1677411114}
@@ -6185,7 +6186,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 857913780}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6387,7 +6388,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884609023}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6395,8 +6396,8 @@ RectTransform:
   - {fileID: 320052333}
   - {fileID: 1374042052}
   - {fileID: 479404440}
-  m_Father: {fileID: 1261426799}
-  m_RootOrder: 3
+  m_Father: {fileID: 857913780}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8569,7 +8570,6 @@ RectTransform:
   - {fileID: 2114621975}
   - {fileID: 381490734}
   - {fileID: 832624364}
-  - {fileID: 884609024}
   m_Father: {fileID: 857913780}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10790,7 +10790,7 @@ RectTransform:
   - {fileID: 889876179}
   - {fileID: 294230356}
   m_Father: {fileID: 857913780}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12310,7 +12310,7 @@ RectTransform:
   - {fileID: 1986090638}
   - {fileID: 1404233793}
   m_Father: {fileID: 857913780}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13928,6 +13928,22 @@ MonoBehaviour:
   choice1Txt: {fileID: 697714842}
   choice2: {fileID: 479404437}
   choice2Txt: {fileID: 389609945}
+  randomEventTitles:
+  - First Kiss
+  - Free Money
+  - Job Offer
+  randomEventDescs:
+  - A girl tries to kiss you. It will be your first kiss!
+  - You find a briefcase with $1,000 in it!
+  - A man offers you a job to Detail a rich persons car for $12,000 a year
+  choice1Texts:
+  - Kiss her
+  - Take It
+  - Accept the Job
+  choice2Texts:
+  - Run Away
+  - Leave It
+  - Decline the Job
 --- !u!1 &1807779126
 GameObject:
   m_ObjectHideFlags: 0
@@ -14391,7 +14407,7 @@ RectTransform:
   - {fileID: 777709757}
   - {fileID: 1670778748}
   m_Father: {fileID: 857913780}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
