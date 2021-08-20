@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class Jobs : MonoBehaviour
 {
     public Character myCharacter;
+    public GameObject scrollView;
 
     public GameObject[] PossibleJobPanel;
     public Button[] takeJobButtons;
@@ -102,5 +103,23 @@ public class Jobs : MonoBehaviour
     public void WorkPerformanceUpdater(){
         workPerformanceText.text = workPerformanceSlider.value.ToString();
         jobInfoText.text = "Job: " + myCharacter.jobTitle + "\nSalary: $" + myCharacter.salary;
+        WorkPerformanceChecker();
+    }
+
+    public void WorkPerformanceChecker()
+    {
+        if(workPerformanceSlider.value >= 80)
+        {
+            myCharacter.salary *= 1.1f;
+            workPerformanceSlider.value = 50;
+            WorkPerformanceUpdater();
+            myCharacter.UpdateTexts();
+        } else if (workPerformanceSlider.value <= 30)
+        {
+            myCharacter.jobTitle = "Unemployed";
+            myCharacter.salary = 0;
+            myCharacter.UpdateTexts();
+            scrollView.SetActive(true);
+        }
     }
 }

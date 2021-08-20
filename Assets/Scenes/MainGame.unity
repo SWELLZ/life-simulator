@@ -13781,6 +13781,7 @@ MonoBehaviour:
   myFun: {fileID: 1803071555}
   myBank: {fileID: 1803071553}
   myRandom: {fileID: 1803071556}
+  myJob: {fileID: 1803071554}
   ageText: {fileID: 281715942}
   nameText: {fileID: 1868906621}
   moneyText: {fileID: 231303070}
@@ -13864,6 +13865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 1803071551}
+  scrollView: {fileID: 1986090637}
   PossibleJobPanel:
   - {fileID: 1160918966}
   - {fileID: 1972711137}

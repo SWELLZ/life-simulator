@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     public Fun myFun;
     public Bank myBank;
     public RandomEvent myRandom;
+    public Jobs myJob;
 
     //Initiating text UI's
     public Text ageText;
@@ -39,7 +40,7 @@ public class Character : MonoBehaviour
     public int year;
     public float money = 0f;
     public float savingsAccount = 0f;
-    public int salary = 0;
+    public float salary = 0;
     public new string name;
     public string jobTitle;
 
@@ -84,6 +85,9 @@ public class Character : MonoBehaviour
         {
             myRandom.RandomScenario();
         }
+        myJob.workPerformanceSlider.value -= 5;
+        myJob.WorkPerformanceChecker();
+        myJob.WorkPerformanceUpdater();
         UpdateSliders();
         UpdateTexts();
     }
